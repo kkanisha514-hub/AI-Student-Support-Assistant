@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+
+# Environment
+.env
+venv/
+.venv/
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+
+# Chroma
+data/chroma/*
+!data/chroma/.gitkeep
+
+# Testing
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Logs
+*.log

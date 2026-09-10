@@ -1,0 +1,43 @@
+[SOURCE: Anna University Examination Info, PAGE: 1]
+JACSICE is affiliated to Anna University, Chennai, so all university-level
+examinations (end-semester theory exams for B.E./B.Tech/M.E. programmes) follow
+Anna University's Controller of Examinations (COE) schedule, not a college-only
+timetable.
+
+Where to check the official exam timetable:
+- Official COE portal: aucoe.annauniv.edu (also mirrored at coe1.annauniv.edu)
+- Official university site: www.annauniv.edu
+Students should select "Affiliated Colleges" (as opposed to "University Departments"),
+then choose the correct Regulation (e.g. Regulation 2021 or Regulation 2025) and
+department to find the subject-wise date sheet PDF for the current semester.
+
+[SOURCE: Anna University Examination Info, PAGE: 2]
+General Examination Pattern (per Anna University norms):
+- Theory examinations are typically of 3 hours duration, for a maximum of 100 marks.
+- Exams are conducted in two sessions: Forenoon (FN), usually 10:00 AM to 1:00 PM,
+  and Afternoon (AN), usually 2:00 PM to 5:00 PM.
+- A short reading time (commonly around 10 minutes) is generally provided before the
+  exam start time.
+- Internal Assessment marks are based on periodic tests (commonly referred to as
+  CA-I, CA-II, CA-III) conducted by the college, combined with the university's
+  end-semester exam marks for the final grade.
+
+[SOURCE: Anna University Examination Info, PAGE: 3]
+Students with standing arrears should check the separate "Arrear Examination"
+timetable, published alongside the regular semester schedule on the COE portal.
+Regulation matters: students admitted under different regulations (e.g. Regulation
+2021 vs. Regulation 2025) may have different subject codes and slightly different
+exam schedules, so always download the timetable matching your specific regulation
+and department.
+
+Hall tickets must be downloaded and printed from the student login portal; carrying
+a digital copy on a phone is not accepted inside the examination hall.
+
+[SOURCE: Anna University Examination Info, PAGE: 4]
+IMPORTANT NOTE FOR ADMIN: Exact subject-wise exam dates change every semester and
+are published by Anna University as official PDFs closer to each exam session. This
+document intentionally does NOT list specific dates to avoid giving students
+outdated or incorrect information. When each semester's timetable PDF is released,
+download it from aucoe.annauniv.edu and upload it here via the admin upload feature
+(or add specific rows to the `exam_schedule` SQLite table) so the assistant can give
+exact dates for that semester.

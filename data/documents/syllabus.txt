@@ -1,0 +1,25 @@
+[SOURCE: Syllabus - CSE 3rd Year, PAGE: 1]
+Greenfield Institute of Technology (DEMO DATA)
+Department of Computer Science and Engineering - 3rd Year Syllabus (Semester 5)
+
+Subjects offered in Semester 5:
+1. Database Management Systems (CS301) - 4 credits
+2. Operating Systems (CS302) - 4 credits
+3. Computer Networks (CS303) - 3 credits
+4. Software Engineering (CS304) - 3 credits
+5. Elective I - 3 credits
+
+[SOURCE: Syllabus - CSE 3rd Year, PAGE: 2]
+Database Management Systems (CS301) covers: relational model, SQL, normalization,
+transactions, concurrency control, indexing, and an introduction to NoSQL databases.
+Recommended textbook: "Database System Concepts" by Silberschatz, Korth, Sudarshan.
+
+Operating Systems (CS302) covers: process management, CPU scheduling, memory
+management, virtual memory, file systems, and deadlock handling.
+
+[SOURCE: Syllabus - CSE 3rd Year, PAGE: 3]
+Computer Networks (CS303) covers: OSI and TCP/IP models, routing algorithms,
+congestion control, application layer protocols (HTTP, DNS, FTP), and network security basics.
+
+Software Engineering (CS304) covers: SDLC models, requirements engineering,
+software design principles, testing strategies, and project management basics (Agile/Scrum).

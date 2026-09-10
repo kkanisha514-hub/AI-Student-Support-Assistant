@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CampusAI - Knowledge Base
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/admin-style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="admin-layout">
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="admin-brand">
+
+            <div class="admin-logo">
+                🎓
+            </div>
+
+            <div>
+
+                <div class="admin-brand-title">
+                    CampusAI
+                </div>
+
+                <div class="admin-brand-subtitle">
+                    Administration
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <nav class="admin-nav">
+
+            <a
+                href="/"
+                class="admin-nav-item"
+            >
+                💬
+                <span>
+                    Student Assistant
+                </span>
+            </a>
+
+
+            <a
+                href="/static/admin.html"
+                class="admin-nav-item active"
+            >
+                📚
+                <span>
+                    Knowledge Base
+                </span>
+            </a>
+
+        </nav>
+
+
+        <div class="admin-sidebar-bottom">
+
+            <span class="status-dot"></span>
+
+            System online
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN
+    ================================================== -->
+
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+
+            <div>
+
+                <h1>
+                    Knowledge Base
+                </h1>
+
+                <p>
+                    Manage documents used by your AI assistant.
+                </p>
+
+            </div>
+
+
+            <a
+                href="/"
+                class="back-btn"
+            >
+                ← Back to Assistant
+            </a>
+
+        </header>
+
+
+
+        <div class="admin-content">
+
+
+            <!-- =================================================
+                 STATISTICS
+            ================================================== -->
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            Documents
+                        </div>
+
+                        <div
+                            id="documentCount"
+                            class="stat-value"
+                        >
+                            —
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon brain">
+                        🧠
+                    </div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            AI Knowledge
+                        </div>
+
+                        <div class="stat-value">
+                            Active
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon database">
+                        ●
+                    </div>
+
+                    <div>
+
+                        <div class="stat-label">
+                            Vector Store
+                        </div>
+
+                        <div class="stat-value">
+                            ChromaDB
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 UPLOAD DOCUMENT
+            ================================================== -->
+
+            <section class="admin-card">
+
+                <h2>
+                    Add knowledge
+                </h2>
+
+                <p class="card-description">
+                    Upload official documents that the assistant should understand.
+                </p>
+
+
+                <form id="uploadForm">
+
+
+                    <label
+                        for="fileInput"
+                        class="upload-area"
+                    >
+
+                        <div class="upload-icon">
+                            ↑
+                        </div>
+
+
+                        <div class="upload-title">
+                            Upload document
+                        </div>
+
+
+                        <!-- IMPORTANT:
+                             admin.js uses this ID
+                        -->
+
+                        <div
+                            id="selectedFileName"
+                            class="upload-text"
+                        >
+                            Click to select a PDF or TXT file
+                        </div>
+
+
+                        <div class="upload-format">
+                            Supported formats: .pdf and .txt
+                        </div>
+
+                    </label>
+
+
+                    <input
+                        type="file"
+                        id="fileInput"
+                        accept=".txt,.pdf"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        id="uploadButton"
+                        class="upload-button"
+                    >
+                        Upload & Add to Knowledge Base
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="uploadStatus"
+                    class="status"
+                ></div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 DOCUMENT LIST
+            ================================================== -->
+
+            <section class="admin-card">
+
+
+                <div class="documents-header">
+
+                    <div>
+
+                        <h2>
+                            Knowledge documents
+                        </h2>
+
+                        <p class="card-description">
+                            Documents currently available to the AI.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="document-table">
+
+
+                    <div class="document-table-header">
+
+                        <span>
+                            DOCUMENT
+                        </span>
+
+                        <span>
+                            ACTION
+                        </span>
+
+                    </div>
+
+
+                    <ul id="docList">
+
+                        <li class="muted">
+                            Loading documents...
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script
+    src="/static/admin.js"
+></script>
+
+</body>
+
+</html>

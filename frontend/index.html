@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CampusAI - Student Support Assistant</title>
+
+  <!-- IMPORTANT: CSS is inside static folder -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+
+    <div class="brand">
+      <div class="brand-icon">🎓</div>
+
+      <div>
+        <div class="brand-title">CampusAI</div>
+        <div class="brand-subtitle">Student Assistant</div>
+      </div>
+    </div>
+
+    <button id="newChatBtn" class="new-chat-btn">
+      <span class="plus">＋</span>
+      <span>New conversation</span>
+    </button>
+
+
+    <!-- Student Profile -->
+    <section class="profile-section">
+
+      <div class="section-title">
+        STUDENT PROFILE
+      </div>
+
+      <div class="profile-card">
+
+        <label for="studentName">Name</label>
+        <input
+          id="studentName"
+          type="text"
+          placeholder="Enter your name"
+        />
+
+        <label for="studentDept">Department</label>
+        <select id="studentDept">
+          <option value="">Select department</option>
+          <option value="CSE">Computer Science</option>
+          <option value="ECE">Electronics & Communication</option>
+          <option value="MECH">Mechanical Engineering</option>
+          <option value="CIVIL">Civil Engineering</option>
+        </select>
+
+        <label for="studentYear">Year</label>
+        <input
+          id="studentYear"
+          type="number"
+          min="1"
+          max="4"
+          placeholder="Enter year"
+        />
+
+        <button id="saveProfileBtn" class="save-profile-btn">
+          Save profile
+        </button>
+
+        <div id="profileStatus" class="profile-status"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Chat History -->
+    <section class="history-section">
+
+      <div class="section-title">
+        RECENT CONVERSATIONS
+      </div>
+
+      <div class="history-card">
+        <ul id="historyList">
+          <li class="empty-history">
+            💬 No conversations yet
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+
+    <!-- Bottom Admin -->
+    <div class="sidebar-bottom">
+
+      <a
+        href="/static/admin.html"
+        class="knowledge-link"
+      >
+
+        <div class="knowledge-icon">
+          ⚙️
+        </div>
+
+        <div>
+          <div class="knowledge-title">
+            Knowledge Base
+          </div>
+
+          <div class="knowledge-subtitle">
+            Manage documents
+          </div>
+        </div>
+
+      </a>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+        <span>System online</span>
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ================= MAIN CHAT ================= -->
+  <main class="chat-main">
+
+    <!-- Header -->
+    <header class="chat-header">
+
+      <div class="assistant-info">
+
+        <div class="assistant-avatar">
+          AI
+        </div>
+
+        <div>
+
+          <div class="assistant-name">
+            Student Support Assistant
+          </div>
+
+          <div class="connection">
+            <span id="connStatus" class="connection-dot"></span>
+            <span id="connectionText">Connected</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="model-badge">
+        Qwen 2.5
+      </div>
+
+    </header>
+
+
+    <!-- Chat -->
+    <section
+      id="chatArea"
+      class="chat-area"
+    >
+
+      <div class="message assistant">
+
+        <div class="avatar-small">
+          AI
+        </div>
+
+        <div class="bubble assistant-bubble">
+          👋 Hi! I'm your AI Student Support Assistant.
+
+          <br><br>
+
+          I can help you with your syllabus, exam schedule,
+          college regulations, notices, academic calendar,
+          and other college-related questions.
+
+          <br><br>
+
+          How can I help you today?
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Error -->
+    <div
+      id="errorBanner"
+      class="error-banner hidden"
+    ></div>
+
+
+    <!-- Input -->
+    <div class="input-area">
+
+      <form
+        id="chatForm"
+        class="chat-input-form"
+      >
+
+        <input
+          id="chatInput"
+          type="text"
+          placeholder="Ask anything about your academics..."
+          autocomplete="off"
+          required
+        />
+
+        <button
+          type="submit"
+          id="sendButton"
+          aria-label="Send message"
+        >
+          ➤
+        </button>
+
+      </form>
+
+      <div class="disclaimer">
+        CampusAI can make mistakes. Verify important academic information with your college.
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+
+<!-- IMPORTANT: JavaScript is inside static folder -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>
